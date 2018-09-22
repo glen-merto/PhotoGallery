@@ -41,7 +41,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="#" class="nav-link" style="font-size: 2em"> 
+                    <a href="#" class="nav-link" style="font-size: 2em" data-toggle="modal" data-target="#exampleModalCenter"> 
                         <i class="fas fa-poo"></i>
                     </a>
                 </li>

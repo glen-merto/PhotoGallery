@@ -47,5 +47,5 @@
       </div>
     </header>
 
-
+<?php include "includes/login.php"; ?>
 <?php include "includes/footer.php"; ?>
