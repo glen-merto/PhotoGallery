@@ -16,6 +16,8 @@
         <!-- Custom styles for this template -->
         <link href="css/full-slider.css" rel="stylesheet">
 
+        <!-- Fontawesome-->
+        <link rel="stylesheet" href="css/all.min.css">
 
     </head>
 
