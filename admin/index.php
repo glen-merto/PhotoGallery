@@ -27,7 +27,7 @@
                             <div class="card-body-icon">
                                 <i class="fas fa-images"></i>
                             </div>
-                            <div class="mr-5">26 Weekly!</div>
+                            <div class="mr-5"><?php readCat("Weekly"); ?> Weekly!</div>
                         </div>
                         <a class="card-footer text-white clearfix small z-1" href="index.php?posts=weekly">
                             <span class="float-left">View Details</span>
@@ -43,7 +43,7 @@
                             <div class="card-body-icon">
                                 <i class="fas fa-images"></i>
                             </div>
-                            <div class="mr-5">11 Monthly!</div>
+                            <div class="mr-5"><?php readCat("Monthly"); ?> Monthly!</div>
                         </div>
                         <a class="card-footer text-white clearfix small z-1" href="index.php?posts=monthly">
                             <span class="float-left">View Details</span>
@@ -59,7 +59,7 @@
                             <div class="card-body-icon">
                                 <i class="fas fa-images"></i>
                             </div>
-                            <div class="mr-5">123 Yearly!</div>
+                            <div class="mr-5"><?php readCat("Yearly"); ?> Yearly!</div>
                         </div>
                         <a class="card-footer text-white clearfix small z-1" href="index.php?posts=yearly">
                             <span class="float-left">View Details</span>
@@ -75,7 +75,7 @@
                             <div class="card-body-icon">
                                 <i class="fas fa-images"></i>
                             </div>
-                            <div class="mr-5">13 All Time!</div>
+                            <div class="mr-5"><?php readAll(); ?> All Time!</div>
                         </div>
                         <a class="card-footer text-white clearfix small z-1" href="index.php">
                             <span class="float-left">View Details</span>

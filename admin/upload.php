@@ -1,5 +1,38 @@
 <?php include "includes/header.php"; ?>
 
+<?php
+date_default_timezone_set('Asia/Manila');
+
+
+if(isset($_POST['upload'])){
+    $title = $_POST['title'];
+    $photographer = $_POST['photographer'];
+    $category = $_POST['category'];
+
+    $image = $_FILES['image']['name'];
+    $image_temp = $_FILES['image']['tmp_name'];
+
+    $description = $_POST['description'];
+
+
+    move_uploaded_file($image_temp, "../images/$image");
+
+
+    $query = "INSERT INTO table_name(title, photographer, category, image, description, upload_date) VALUES('{$title}', '{$photographer}', '{$category}', '{$image}', '{$description}', now())";
+    $create_query = mysqli_query($con, $query);
+
+    if(!$create_query){
+        die("Error uploading file: " . mysqli_error($con));
+    } else {
+        echo "<script>alert('Upload successful!');</script>";
+    }
+
+}
+
+
+?>
+
+
 <?php include "includes/nav.php"; ?>
 
 <div id="wrapper">
@@ -20,56 +53,55 @@
             </ol>
 
 
-    <div class="card card-register mx-auto">
-        <div class="card-header">Register an Account</div>
-        <div class="card-body">
-          <form>
-            <div class="form-group">
-              <div class="form-row">
-                <div class="col-md-6">
-                  <div class="form-label-group">
-                    <input type="text" id="firstName" class="form-control" placeholder="First name" required="required" autofocus="autofocus">
-                    <label for="firstName">First name</label>
-                  </div>
+            <div class="card card-register mx-auto">
+                <div class="card-header text-white bg-secondary">Upload photo</div>
+                <div class="card-body">
+                    <form action="" method="post" enctype="multipart/form-data">
+
+                        <div class="form-group">
+                            <div class="form-label-group">
+                                <input type="text" id="title" name="title" class="form-control" placeholder="title" required="required" autofocus="autofocus">
+                                <label for="title">Title</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="form-label-group">
+                                <input type="text" id="photographer" name="photographer" class="form-control" placeholder="Photographer" required="required">
+                                <label for="photographer">Photographer</label>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <select name="category" class="custom-select form-control">
+                                <option value="">Select Category</option>
+                                <option value="Weekly">Weekly</option>
+                                <option value="Monthly">Monthly</option>
+                                <option value="Yearly">Yearly</option>
+                                <option value="All time">All time</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="custom-file">
+                                <div class="form-group">
+                                    <label for="exampleFormControlFile1">Example file input</label>
+                                    <input type="file" name="image" class="form-control-file" id="exampleFormControlFile1">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="description">Description</label>
+                            <textarea class="form-control" id="description" name="description" rows="3"></textarea>
+                        </div>
+
+                        <input type="submit" name="upload" class="btn btn-primary btn-block" value="Upload">
+                    </form>
                 </div>
-                <div class="col-md-6">
-                  <div class="form-label-group">
-                    <input type="text" id="lastName" class="form-control" placeholder="Last name" required="required">
-                    <label for="lastName">Last name</label>
-                  </div>
-                </div>
-              </div>
             </div>
-            <div class="form-group">
-              <div class="form-label-group">
-                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="required">
-                <label for="inputEmail">Email address</label>
-              </div>
-            </div>
-            <div class="form-group">
-              <div class="form-row">
-                <div class="col-md-6">
-                  <div class="form-label-group">
-                    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="required">
-                    <label for="inputPassword">Password</label>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-label-group">
-                    <input type="password" id="confirmPassword" class="form-control" placeholder="Confirm password" required="required">
-                    <label for="confirmPassword">Confirm password</label>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <a class="btn btn-primary btn-block" href="login.html">Register</a>
-          </form>
-          <div class="text-center">
-            <a class="d-block small mt-3" href="login.html">Login Page</a>
-            <a class="d-block small" href="forgot-password.html">Forgot Password?</a>
-          </div>
-        </div>
-      </div>
 
 
 

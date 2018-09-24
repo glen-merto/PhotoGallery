@@ -1,3 +1,7 @@
+<?php include "database.php"; ?>
+<?php include "functions.php"; ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
