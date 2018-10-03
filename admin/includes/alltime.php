@@ -14,6 +14,8 @@
                         <th>Image</th>
                         <th>Description</th>
                         <th>Upload Date</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
                     </tr>
                 </thead>
                 <tfoot>
@@ -25,6 +27,8 @@
                         <th>Image</th>
                         <th>Description</th>
                         <th>Upload Date</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
                     </tr>
                 </tfoot>
                 <tbody>
@@ -49,6 +53,8 @@
                             echo "<td><img src='../images/{$image}' width='100px'></td>";
                             echo "<td>{$description}</td>";
                             echo "<td>{$update_date}</td>";
+                            echo "<td><a href='update.php?userid={$id}'>Edit</a></td>";
+                            echo "<td><a href='delete.php?userid={$id}'>Delete</a></td>";
                         echo "</tr>";
                     }
                     ?>
