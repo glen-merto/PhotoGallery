@@ -5,6 +5,8 @@
             <span>Dashboard</span>
         </a>
     </li>
+    
+<!--
     <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <i class="fas fa-fw fa-folder"></i>
@@ -21,6 +23,8 @@
             <a class="dropdown-item" href="blank.php">Blank Page</a>
         </div>
     </li>
+-->
+   
     <li class="nav-item">
         <a class="nav-link" href="upload.php">
             <i class="fas fa-upload"></i>
@@ -38,10 +42,16 @@
         </div>
     </li>
 
-    <li class="nav-item">
-        <a class="nav-link" href="tables.php">
-            <i class="fas fa-users"></i>
-            <span>User</span></a>
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-fw fa-users"></i>
+            <span>Users</span>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+            <h6 class="dropdown-header">User page:</h6>
+            <a class="dropdown-item" href="users.php">View Users</a>
+            <a class="dropdown-item" href="users.php?user=register">Register</a>
+        </div>
     </li>
 
     <li class="nav-item">

@@ -44,17 +44,21 @@
                         $image = $row['image'];
                         $description = $row['description'];
                         $update_date = $row['upload_date'];
-                        
+
                         echo "<tr>";
-                            echo "<td>{$id}</td>";
-                            echo "<td>{$title}</td>";
-                            echo "<td>{$photographer}</td>";
-                            echo "<td>{$category}</td>";
-                            echo "<td><img src='../images/{$image}' width='100px'></td>";
-                            echo "<td>{$description}</td>";
-                            echo "<td>{$update_date}</td>";
-                            echo "<td><a href='update.php?userid={$id}'>Edit</a></td>";
-                            echo "<td><a href='delete.php?userid={$id}'>Delete</a></td>";
+                        echo "<td>{$id}</td>";
+                        echo "<td>{$title}</td>";
+                        echo "<td>{$photographer}</td>";
+                        echo "<td>{$category}</td>";
+                        echo "<td>
+                                <a href='../images/{$image}' data-lightbox='image-1' data-title='{$title}'>
+                                <img src='../images/{$image}' width='100px'>
+                                </a>
+                            </td>";
+                        echo "<td>{$description}</td>";
+                        echo "<td>{$update_date}</td>";
+                        echo "<td><a href='update.php?userid={$id}'>Edit</a></td>";
+                        echo "<td><a href='delete.php?userid={$id}'>Delete</a></td>";
                         echo "</tr>";
                     }
                     ?>

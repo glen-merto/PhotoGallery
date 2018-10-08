@@ -10,7 +10,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link navTxt" href="#">About Us</a>
+                    <a class="nav-link navTxt" href="aboutus.php">About Us</a>
                 </li>
 
                 <li class="nav-item dropdown">
@@ -41,7 +41,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="#" class="nav-link" style="font-size: 2em" data-toggle="modal" data-target="#exampleModalCenter"> 
+                    <a href="includes/login.php" class="nav-link" style="font-size: 2em" data-toggle="modal" data-target="#exampleModalCenter"> 
                         <i class="fas fa-poo"></i>
                     </a>
                 </li>

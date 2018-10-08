@@ -14,6 +14,9 @@
         <meta name="author" content="">
 
         <title>Admin Page</title>
+        
+        <!-- Lightbox CSS -->
+        <link rel="stylesheet" href="css/lightbox.min.css">
 
         <!-- Bootstrap core CSS-->
         <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
