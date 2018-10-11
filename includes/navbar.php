@@ -18,10 +18,10 @@
                         Curation
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item navTxt" href="#">Weekly</a>
-                        <a class="dropdown-item navTxt" href="#">Monthly</a>
-                        <a class="dropdown-item navTxt" href="#">Yearly</a>
-                        <a class="dropdown-item navTxt" href="#">All Time</a>
+                        <a class="dropdown-item navTxt" href="posts.php?cat=weekly">Weekly</a>
+                        <a class="dropdown-item navTxt" href="posts.php?cat=monthly">Monthly</a>
+                        <a class="dropdown-item navTxt" href="posts.php?cat=yearly">Yearly</a>
+                        <a class="dropdown-item navTxt" href="posts.php">All Time</a>
                     </div>
                 </li>
 

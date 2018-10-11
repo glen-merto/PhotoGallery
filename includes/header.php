@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,6 +10,8 @@
         <meta name="author" content="">
 
         <title>Curation</title>
+
+        <link href="css/styles.css" rel="stylesheet">
 
         <!-- Bootstrap core CSS -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
