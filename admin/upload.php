@@ -79,7 +79,6 @@ if(isset($_POST['upload'])){
                                 <option value="Weekly">Weekly</option>
                                 <option value="Monthly">Monthly</option>
                                 <option value="Yearly">Yearly</option>
-                                <option value="All time">All time</option>
                             </select>
                         </div>
 
