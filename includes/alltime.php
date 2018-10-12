@@ -1,41 +1,19 @@
 <br><br><br>
 
 <div class="container">
-<div class="row">
-    
-<?php
+    <div class="row">
 
-$query = "SELECT * FROM table_name";
-$result = mysqli_query($con, $query);
-$counter = 0;
+        <div class='col-sm-4'>
+            <?php showpix(0); ?>
+        </div>
 
-while ($row = mysqli_fetch_assoc($result)) {
-    $img = $row['image'];
+        <div class='col-sm-4'>
+            <?php showpix(1); ?>
+        </div>
 
-    
-        echo "<div class='col-sm-4'>";
-            if ($counter % 3 == 0) {
-            echo "<img src='images/{$img}' width='370px'>";
-            }
-        echo "</div>";
+        <div class='col-sm-4'>
+            <?php showpix(2); ?>
+        </div>
 
-        echo "<div class='col-sm-4'>";
-        if ($counter % 3 == 1) {
-            echo "<img src='images/{$img}' width='370px'>";
-            }
-        echo "</div>";
-
-        echo "<div class='col-sm-4'>";
-        if ($counter % 3 == 2) {
-            echo "<img src='images/{$img}' width='370px'>";
-            }
-        echo "</div>";
-    
-
-    $counter++;
-}
-
-?>
-
-</div>
+    </div>
 </div>
