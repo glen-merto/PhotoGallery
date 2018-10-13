@@ -7,10 +7,15 @@ function showpix($rem){
     $result = mysqli_query($con, $query);
     $ctr = 0;
     while ($row = mysqli_fetch_assoc($result)) {
-        $img = $row['image'];
+        $image = $row['image'];
+        $title = $row['title'];
 
         if ($ctr % 3 == $rem) {
-            echo "<img src='images/{$img}' class='imgS'>";
+            
+            echo "<a href='images/{$image}' data-lightbox='AllTime' data-title='{$title}'>
+            <img src='images/{$image}' width='100px'>
+            </a>";
+            
         }
         $ctr++;
     }
@@ -23,10 +28,12 @@ function showpixC($cat, $rem){
     $result = mysqli_query($con, $query);
     $ctr = 0;
     while ($row = mysqli_fetch_assoc($result)) {
-        $img = $row['image'];
+        $image = $row['image'];
+        $title = $row['title'];
 
         if ($ctr % 3 == $rem) {
-            echo "<img src='images/{$img}' class='imgS'>";
+            echo "<a href='images/{$image}' data-lightbox='images' data-title='{$title}'>";
+            echo "<img src='images/{$image}'  class='imgS'>";  
         }
         $ctr++;
     }

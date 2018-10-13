@@ -12,7 +12,11 @@
 
         <title>Curation</title>
 
+        <!-- Custom CSS -->
         <link href="css/styles.css" rel="stylesheet">
+
+        <!-- Lightbox CSS -->
+        <link rel="stylesheet" href="css/lightbox.min.css">
 
         <!-- Bootstrap core CSS -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
