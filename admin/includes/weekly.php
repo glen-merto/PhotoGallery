@@ -51,7 +51,7 @@
                         echo "<td>{$photographer}</td>";
                         echo "<td>{$category}</td>";
                         echo "<td>
-                                <a href='../images/{$image}' data-lightbox='image-1' data-title='{$title}'>
+                                <a href='../images/{$image}' data-lightbox='Weekly' data-title='{$title}'>
                                 <img src='../images/{$image}' width='100px'>
                                 </a>
                             </td>";
