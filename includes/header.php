@@ -23,10 +23,11 @@
 
         <!-- Custom styles for this template -->
         <link href="css/full-slider.css" rel="stylesheet">
+        <link href="admin/css/sb-admin.min.css" rel="stylesheet">
 
         <!-- Fontawesome-->
         <link rel="stylesheet" href="css/all.min.css">
 
     </head>
 
-    <body>
+    <body id="page-top">
